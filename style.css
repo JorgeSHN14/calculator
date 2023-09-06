@@ -1,0 +1,110 @@
+:root {
+    --primary: #51257d;
+    --primary2: #40286c;
+    --primary-gray: #6e5e92;
+    --primary-gray2: #aa86c8;
+    --primary-dark: #553d80;
+    --primary-dark2: #8f60be;
+    --primary-border: #725d92;
+    --secondary:#ffa400;
+    --secondary-dark: #b7801c;
+    --white:#ffffff;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: var(--white);
+    text-align: center;
+    font-size: 2rem;
+}
+
+#calculator {
+    display: inline-block;
+    background: linear-gradient(var(--primary),var(--primary2));
+    border-radius: 1rem;
+    border: 0.1rem solid var(--primary-border);
+    overflow: hidden;
+    max-width: 22.5rem;
+}
+
+#circles {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0.3rem 0 0 0.3rem;
+}
+
+
+.circle {
+    display: inline-block;
+    min-width: 1rem;
+    height: 1rem;
+    border-radius: 100%;
+    margin: 0.3rem;
+}
+
+.circle:first-child{
+    background-color: red;
+}
+.circle:nth-child(2) {
+    background-color: var(--secondary);
+}
+.circle:last-child {
+    background-color: lightgreen;
+}
+
+#display {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 0 1rem 0 1rem;
+    max-height: 6rem;
+}
+
+#display h1 {
+    overflow-x: auto;
+}
+
+button{
+    display: inline-block;
+    color: var(--white);
+    border-style: none;
+    border: 1px solid var(--primary2);
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+}
+
+.dark {
+    background-color: var(--primary-dark);
+}
+
+.dark:active {
+    background-color: var(--primary-dark2);
+}
+
+.gray {
+    background-color: var(--primary-gray);
+}
+
+.gray:active {
+    background-color: var(--primary-gray2);
+}
+
+.orange {
+    background-color: var(--secondary);
+}
+
+.on {
+    background-color: var(--white);
+    color: var(--secondary);
+}
+
+#entries {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(5,20%);
+}
+
+#zero {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}

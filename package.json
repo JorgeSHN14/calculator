@@ -1,0 +1,34 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "Calculator proyect",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JorgeSHN14/calculator.git"
+  },
+  "author": "Jorge Herrera Nieto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JorgeSHN14/calculator/issues"
+  },
+  "homepage": "https://github.com/JorgeSHN14/calculator#readme",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.8.1",
+    "css-minimizer-webpack-plugin": "^5.0.1",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.3",
+    "mini-css-extract-plugin": "^2.7.6",
+    "terser-webpack-plugin": "^5.3.9",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  }
+}
